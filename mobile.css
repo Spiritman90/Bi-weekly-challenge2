@@ -1,0 +1,155 @@
+html {
+  font-size: 12px;
+}
+.nav-bar {
+  position: sticky;
+}
+.main-nav {
+  display: none;
+}
+
+.nav-button {
+  display: none;
+}
+
+.hero__image img {
+  display: none;
+}
+.wrapper {
+  display: block;
+}
+.talented {
+  width: 50%;
+}
+
+.talents {
+  display: flex;
+  margin: 0;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+.talented__photos {
+  width: 35%;
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+}
+.partner__logo--flex {
+  padding: 2rem;
+}
+.partners__logo--image {
+  width: 90%;
+}
+div[class^="img__"] {
+  width: 20%;
+  /* padding: 1rem; */
+}
+.hired {
+  display: block;
+}
+.hired__image img {
+  width: 100%;
+  margin: 0;
+}
+.hired__image {
+  width: 90%;
+  margin: 3rem auto;
+}
+.nav-icon {
+  position: relative;
+}
+.nav-icon,
+.nav-icon::before,
+.nav-icon::after {
+  background-color: #363636;
+  width: 1.5rem;
+  height: 0.1rem;
+  display: inline-block;
+  transition: all 0.5s ease;
+}
+.nav-icon::before,
+.nav-icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+.nav-icon::before {
+  top: -0.5rem;
+}
+.nav-icon::after {
+  top: 0.5rem;
+}
+
+#nav-action:checked + .nav-btn .nav-icon {
+  background-color: transparent;
+  transition: all 0.1s ease;
+}
+#nav-action:checked + .nav-btn .nav-icon::before,
+#nav-action:checked + .nav-btn .nav-icon::after {
+  transition: all 0.5s ease;
+  top: 0;
+}
+
+#nav-action:checked + .nav-btn .nav-icon::before {
+  transform: rotate(45deg);
+}
+#nav-action:checked + .nav-btn .nav-icon::after {
+  transform: rotate(-45deg);
+}
+#nav-action:checked ~ .nav-button {
+  display: block;
+  position: absolute;
+  top: 40rem;
+  left: 0;
+}
+#nav-action:checked ~ .main-nav {
+  display: block;
+  position: absolute;
+  top: 4.75rem;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  margin-left: 0;
+  padding-bottom: 4rem;
+}
+.nav-bar ul {
+  list-style: none;
+}
+.nav-items {
+  display: block;
+  margin-left: 0;
+}
+.course-menu:hover .dropdown__menu,
+.employer-menu:hover .dropdown__menu,
+.talent-menu:hover .dropdown__menu {
+  display: none;
+}
+.dropdown__menu {
+  display: block;
+  box-shadow: none;
+}
+.dropdown__menu a {
+  width: 100%;
+  margin: 10rem;
+}
+.nav-bar ul li {
+  margin: 0;
+}
+.nav-bar .main-nav .nav-items .course-menu > a,
+.nav-bar .main-nav .nav-items .employer-menu > a,
+.nav-bar .main-nav .nav-items .talent-menu > a {
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link__header {
+  margin-bottom: 2rem;
+  margin-top: 8rem;
+  font-size: 1.4rem;
+}
+
+.main-footer .site-links li {
+  font-size: 1.3rem;
+}
